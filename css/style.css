@@ -1,0 +1,374 @@
+/* Document styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/fonts/OpenSans-Bold.woff');
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+
+.header {
+    background-image: url('/img/header.jpg');
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.header .container {
+    position: relative;
+    padding-top: 30px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 180px;
+}
+
+.header-title {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans Bold';
+    font-size: 45px;
+    width: 700px;
+    margin: 125px auto 0 auto;
+    line-height: 1.6;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: inline;
+    margin-left: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* Content styles  */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.main {
+    max-width: 780px;
+    flex-grow: 1;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+.news-img {
+    width: 380px;
+}
+
+.news-content {
+    max-width: 365px;
+}
+
+.news-genre-list {
+    list-style-type: none;
+}
+
+.news-genre-item {
+    display: inline-block;
+    font: 14px 'Open Sans Bold';
+    text-transform: uppercase;
+    color: #cc9966;
+}
+.news-genre-item:nth-child(n + 1) {
+    margin-right: 20px;
+}
+
+.news-title {
+    text-transform: uppercase;
+    font: 20px 'Open Sans Bold';
+    margin-top: 10px;
+}
+
+.news-date {
+    color: #888888;
+    font: 12px 'Open Sans';
+    margin-right: 15px;
+}
+
+.news-info {
+    margin-top: 30px;
+}
+.news-author {
+    font: 12px 'Open Sans Bold';
+}
+
+.news-text {
+    font: 15px 'Open Sans';
+    margin-top: 55px;
+    line-height: 1.2;
+}
+
+/* Aside styles */
+
+.aside {
+    max-width: 275px;
+    flex-grow: 1;
+}
+
+.aside-title {
+    text-transform: uppercase;
+    font: 14px 'Open Sans Bold';
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aside-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 65px;
+    height: 3px;
+    background-color: #b59f5b;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+.aside-container {
+    margin-bottom: 60px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.post-img {
+    width: 70px;
+}
+
+.post-content {
+    max-width: 185px;
+}
+
+.post-title {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font: 14px 'Open Sans Bold';
+    line-height: 1.2;
+}
+
+.post-info {
+    font: 12px 'Open Sans';
+    opacity: 0.54;
+}
+
+.search-form {
+    position: relative;
+}
+.input {
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    background: #f4f7f6;
+    color: #9e9c9c;
+    font: 13px 'Open Sans';
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #b59f5b;
+    cursor: pointer;
+}
+.search-btn:before {
+    display: block;
+    margin: auto;
+    content: '';
+    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/search.svg');
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.newsletter-btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #b59f5b;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font: 14px 'Open Sans Bold';
+    margin-top: 15px;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.tags-item {
+    padding: 5px 10px;
+    border: 3px solid #f4f3f1;
+    text-transform: uppercase;
+    font: 12px 'Open Sans Bold';
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.tags-item:hover {
+    border: 3px solid #b59f5b;
+    cursor: pointer;
+}
+
+.themes-list {
+    list-style-type: none;
+}
+
+.themes-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+.themes-item::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.themes-item-title {
+    font: 14px 'Open Sans Bold';
+}
+.themes-item-number {
+    font: 12px 'Open Sans Bold';
+    color: #b59f5b;
+    vertical-align: top;
+}
+
+/* Footer styles */
+
+.footer .container {
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+.links {
+    padding: 33px 510px;
+    background-color: #f4f7f6;
+}
+
+.links-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links-list li {
+    display: inline-block;
+}
+
+.social-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.social-icon::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+
+.social-icon__dribble::before {
+    background-image: url('/img/dribble.svg');
+}
+
+.social-icon__pinterest {
+    background-image: url('/img/pinterest.svg');
+}
+
+.social-icon__tumbrl {
+    background-image: url('/img/tumblr.svg');
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.right {
+    text-align: center;
+    margin-top: 70px;
+    font: 12px 'Open Sans Bold';
+    color: #999999;
+}
