@@ -312,7 +312,7 @@
 }
 
 .links {
-    padding: 33px 510px;
+    padding: 33px 0 33px 0;
     background-color: #f4f7f6;
 }
 
@@ -320,6 +320,8 @@
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    max-width: 155px;
+    margin: 0 auto;
 }
 .links-list li {
     display: inline-block;
