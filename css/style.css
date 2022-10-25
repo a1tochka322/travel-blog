@@ -21,16 +21,54 @@
     font-style: normal;
 }
 
-.visually-hidden {
+.title-underline::after {
+    content: '';
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    bottom: -10px;
+    left: 0;
+    width: 65px;
+    height: 3px;
+    background-color: rgba(181, 159, 91, 0.6);
+    right: 0;
+    margin: 0 auto;
+    display: block;
 }
+
+.select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-image: url(../img/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+    margin: 0;
+    border: none;
+    background-color: #f4f7f6;
+    font: 13px 'Open Sans';
+    color: rgba(0, 0, 0, 0.54);
+
+}
+
+.popup-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -160px;
+    right: -30px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/form-x.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
 
 @media (max-width: 640px) {
 
@@ -109,18 +147,7 @@
         position: relative;
     }
 
-    .title-underline::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 65px;
-        height: 3px;
-        background-color: rgba(181, 159, 91, 0.6);
-        right: 0;
-        margin: 0 auto;
-        display: block;
-    }
+
 
     .trend-news-container {
         display: flex;
@@ -646,26 +673,7 @@
 
     }
 
-    .select {
-        display: inline-block;
-        box-sizing: border-box;
-        width: 100%;
-        height: 50px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        padding-left: 20px;
-        padding-right: 25px;
-        background-image: url(../img/form-arrows.svg);
-        background-repeat: no-repeat;
-        background-position: right 15px center;
-        background-size: 15px;
-        margin: 0;
-        border: none;
-        background-color: #f4f7f6;
-        font: 13px 'Open Sans';
-        color: rgba(0, 0, 0, 0.54);
 
-    }
 
     .select:focus {
         outline: none;
@@ -727,19 +735,6 @@
         width: 100%;
     }
 
-    .popup-close {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: -160px;
-        right: -30px;
-        background-color: transparent;
-        border: none;
-        background-image: url(../img/form-x.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
 
 
 
@@ -814,18 +809,6 @@
         position: relative;
     }
 
-    .title-underline::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 65px;
-        height: 3px;
-        background-color: rgba(181, 159, 91, 0.6);
-        right: 0;
-        margin: 0 auto;
-        display: block;
-    }
 
     .trend-news-container {
         display: flex;
@@ -836,7 +819,7 @@
     }
 
     .trend-news {
-        width: calc((100vw - 3px) / 2);
+        width: calc((100% - 3px) / 2);
         height: 245px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1355,26 +1338,7 @@
 
     }
 
-    .select {
-        display: inline-block;
-        box-sizing: border-box;
-        width: 100%;
-        height: 50px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        padding-left: 20px;
-        padding-right: 25px;
-        background-image: url(../img/form-arrows.svg);
-        background-repeat: no-repeat;
-        background-position: right 15px center;
-        background-size: 15px;
-        margin: 0;
-        border: none;
-        background-color: #f4f7f6;
-        font: 13px 'Open Sans';
-        color: rgba(0, 0, 0, 0.54);
 
-    }
 
     .select:focus {
         outline: none;
@@ -1436,19 +1400,7 @@
         width: 100%;
     }
 
-    .popup-close {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: -160px;
-        right: -30px;
-        background-color: transparent;
-        border: none;
-        background-image: url(../img/form-x.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
+
 
 
 }
@@ -1534,19 +1486,6 @@
         position: relative;
     }
 
-    .title-underline::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 65px;
-        height: 3px;
-        background-color: rgba(181, 159, 91, 0.6);
-        right: 0;
-        margin: 0 auto;
-        display: block;
-    }
-
     .trend-news-container {
         display: flex;
         width: 100%;
@@ -1554,7 +1493,7 @@
     }
 
     .trend-news {
-        width: calc((100vw - 9px) / 4);
+        width: calc((100% - 9px) / 4);
         height: 320px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -2050,26 +1989,7 @@
 
     }
 
-    .select {
-        display: inline-block;
-        box-sizing: border-box;
-        width: 100%;
-        height: 50px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        padding-left: 20px;
-        padding-right: 25px;
-        background-image: url(../img/form-arrows.svg);
-        background-repeat: no-repeat;
-        background-position: right 15px center;
-        background-size: 15px;
-        margin: 0;
-        border: none;
-        background-color: #f4f7f6;
-        font: 13px 'Open Sans';
-        color: rgba(0, 0, 0, 0.54);
 
-    }
 
     .select:focus {
         outline: none;
@@ -2150,6 +2070,17 @@
 
 .hidden {
     display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
