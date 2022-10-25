@@ -376,6 +376,9 @@
 					<source
 									media="(min-width: 1200px)"
 									srcset="img/shop-item-desk1.jpg">
+					<source
+									media="(min-width: 641px)"
+									srcset="img/shop-item-tablet1.jpg">
 					<img
 									alt="banner of 1 product"
 									src="img/shop-item-desk1.jpg"
@@ -413,6 +416,9 @@
 					<source
 									media="(min-width: 1200px)"
 									srcset="img/shop-item-desk2.jpg">
+					<source
+									media="(min-width: 641px)"
+									srcset="img/shop-item-tablet2.jpg">
 					<img
 									alt="banner of 1 product"
 									src="img/shop-item-desk2.jpg"
@@ -445,6 +451,9 @@
 					<source
 									media="(min-width: 1200px)"
 									srcset="img/shop-item-desk3.jpg">
+					<source
+									media="(min-width: 641px)"
+									srcset="img/shop-item-tablet3.jpg">
 					<img
 									alt="banner of 1 product"
 									src="img/shop-item-desk3.jpg"
@@ -511,5 +520,48 @@
 		</div>
 	</div>
 </footer>
+<div class="fixed-overlay">
+	<div class="popup">
+		<div class="popup-message">
+			<h2 class="top-title title-underline">Ваш фидбек</h2>
+			<form class="popup-form">
+				<div class="form-group">
+					<label class="field">
+						<span class="field-label">Как часто вы заходите на сайт?</span>
+						<select class="select">
+							<option value="every-day" selected="">Почти каждый день</option>
+							<option value="day">Раз в несколько дней</option>
+							<option value="week">Раз в несколько недель</option>
+							<option value="year">Несколько раз в год</option>
+						</select>
+					</label>
+				</div>
+				<div class="form-group">
+					<span class="field-label">Вы подписаны на e-mail рассылку?</span>
+					<div class="form-radio">
+						<input class="form-check-input" type="radio" id="form-check-yes" name="radioNewsletter" value="yes" checked>
+						<label for="form-check-yes"><span  class="form-check-description">Да</span></label>
+						<input  class="form-check-input" type="radio" id="form-check-no" name="radioNewsletter" value="no">
+						<label for="form-check-no" class="form-check-description">Нет</label>
+					</div>
+
+				</div>
+				<div class="form-group">
+					<label>
+						<span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+						<textarea class="form-field-review" placeholder="Может, больше рецептов?"></textarea>
+					</label>
+				</div>
+				<div class="form-group">
+					<button class="form-button" type="button">Отправить</button>
+				</div>
+
+				<button class="popup-close" type="button"><span class="hidden">Закрыть окно</span> </button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
 </body>
 </html>
